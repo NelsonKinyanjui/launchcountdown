@@ -1,13 +1,24 @@
 for(i = 10; 10 > i; i-- ){
-    const para = document.createElement('p');
-    output.appendChild(para);
-    if(){
+    let output = document.querySelector('.output');
+output.innerHTML = '';
 
-    }
-    else if(){
-
-    }
     
-    else{}
+    if(i === 10){
+        const para = document.createElement('p');
+    output.appendChild(para);
+        para.textContent = 'Countdown 10';
+
+    }
+    else if(i === 0){
+        const para = document.createElement('p');
+    output.appendChild(para);
+        para.textContent ='Blast off!';
+    }
+
+    else{ 
+        const para = document.createElement('p');
+    output.appendChild(para);
+        para.textContent = i;
+    }
 
 }
