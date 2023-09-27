@@ -1,24 +1,26 @@
-for(i = 10; 10 > i; i-- ){
-    let output = document.querySelector('.output');
-output.innerHTML = '';
-
+let output = document.querySelector('.output');
+    output.innerHTML = '';
+    
+    
+    
+for(i = 10; i >= 0; i-- ){
+    const para = document.createElement('p');
     
     if(i === 10){
-        const para = document.createElement('p');
-    output.appendChild(para);
-        para.textContent = 'Countdown 10';
+       
+      para.textContent = 'Countdown 10';
 
     }
     else if(i === 0){
-        const para = document.createElement('p');
-    output.appendChild(para);
+         
+            
         para.textContent ='Blast off!';
     }
 
     else{ 
-        const para = document.createElement('p');
-    output.appendChild(para);
+      
+    
         para.textContent = i;
     }
-
+    output.appendChild(para);
 }
